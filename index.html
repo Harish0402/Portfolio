@@ -45,22 +45,6 @@
                 });
             }
         });
-        function showSpinner(button) {
-            // Get spinner and text elements
-            const spinner = button.querySelector('.spinner-border');
-            const buttonText = button.querySelector('.button-text');
-            const url = button.getAttribute('data-url'); // Get target URL from button's data-url attribute
-
-            // Show the spinner and hide the text
-            setTimeout(() => {
-            spinner.classList.remove('d-none');
-            buttonText.classList.add('d-none');
-
-            // Redirect to specified URL after 3 seconds
-            
-                window.location.href = url;
-            }, 3000); // Delay in milliseconds
-        }
 
     </script>
 
@@ -85,8 +69,8 @@
                     <a href="#project" class="nav-link text-uppercase">Project</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-secondary text-uppercase" id="spinnerButton" data-bs-toggle="modal" data-bs-target="#loginModal" onclick="showSpinner(this)">
-                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    <button class="btn btn-secondary text-uppercase"  data-bs-toggle="modal" data-bs-target="#loginModal">
+                      
                         <span class="button-text">Login</span>
                     </button>
                 </li>
@@ -192,7 +176,7 @@
         <h4 class="h4 ps-3 text-secondary">Projects</h4><br>
         <div class="project-flex row">
             <div class="project-cont col-md-4">
-                <img src="/images/neewspaper.png" alt="neewspaper" class="project-cont">
+                <img src="./images/neewspaper.png" alt="neewspaper" class="project-cont">
                 <p>To visit the page <a href="https://harish0402.github.io/newspaper-layout/">Click Here</a></p>
             </div>
 
