@@ -11,14 +11,13 @@ h1 {
 }
 
 .profile {
-  float: right;
-  width: 250px;
-  height: 230px;
-  margin-right: 30px;
+  width: 300px;
+  height: 300px;
+
 }
 
 .container {
-  height: 250px;
+  height: max-content;
 }
 
 .grid {
@@ -48,7 +47,7 @@ h1 {
 }
 
 .project-cont {
-  width: 300px;
+  width: 250px;
   height: 200px;
 }
 
